@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>To Do</title>
+  </head>
+  <body>
+    <div class="todo-app">
+      <div class="container-sm" id="top">
+        <h1>
+          To-Do List <img src="images/icon.png" alt="icon" id="book-icon" />
+        </h1>
+        <div class="row">
+          <label for="response"></label>
+          <input
+            type="text"
+            id="response"
+            placeholder="Take a note..."
+            onkeyup="getInput()"
+          />
+        </div>
+      </div>
+    </div>
+    <ul id="note-container" class="list-group"></ul>
+    <script type="text/javascript" src="todo.js"></script>
+  </body>
+</html>
